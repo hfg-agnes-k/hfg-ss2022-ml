@@ -54,8 +54,8 @@ void draw() {
       mouseY > by-boxSize && mouseY < by+boxSize) {
     overBox = true;  
     if(!locked) { 
-      stroke(0, 255, 0); 
-      fill(0, 255, 0);
+      stroke(0, 0, 255); 
+      fill(0, 0, 255);
     } 
   } else {
     stroke(0, 255, 0);

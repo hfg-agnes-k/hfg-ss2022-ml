@@ -8,13 +8,16 @@ NetAddress dest;
 
 float t = 0;
 float numLines = 1;
-float speed = 0.5;
+float speed = 1.25;
+float red = 1;
+float green = 1;
+float blue = 1;
 
-color from = color(0, 255, 100);
+color from = color(0, 0, 100);
 color to = color(255, 0, 0);
 
 float x0(float t) {
-  return (cos(t/200))*20;
+  return (cos(t/280))*20;
 }
 float y0(float t) {
   return sin(t/40) * 100;
@@ -37,9 +40,9 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(180);
   translate(width/2, height/2);
-  stroke(255);
+  stroke(map(red, 0, 255, 0), map(green, 255, 0, 0), map(blue, 0, 0, 250));
   strokeWeight(1);
 
   for (int i = 0; i < map(numLines, 0, 1, 1, 100); i++) {
@@ -52,9 +55,12 @@ void draw() {
 //This is called automatically when OSC message is received
 void oscEvent(OscMessage theOscMessage) {
   if (theOscMessage.checkAddrPattern("/wek/outputs")==true) {
-    if (theOscMessage.checkTypetag("ff")) {
+    if (theOscMessage.checkTypetag("fffff")) {
       speed= theOscMessage.get(0).floatValue();
       numLines = theOscMessage.get(1).floatValue();
+      red = theOscMessage.get(2).floatValue();
+      green = theOscMessage.get(3).floatValue();
+      blue = theOscMessage.get(4).floatValue();
     }
   }
 }
