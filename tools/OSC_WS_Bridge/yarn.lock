@@ -162,6 +162,11 @@
   dependencies:
     "file-uri-to-path" "1.0.0"
 
+"binpack@~0":
+  "integrity" "sha1-vT0JdMPyoERuF99PYLVacqIFqX4="
+  "resolved" "https://registry.npmjs.org/binpack/-/binpack-0.1.0.tgz"
+  "version" "0.1.0"
+
 "bl@^4.0.3":
   "integrity" "sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w=="
   "resolved" "https://registry.npmjs.org/bl/-/bl-4.1.0.tgz"
@@ -751,6 +756,13 @@
   dependencies:
     "semver" "^5.4.1"
 
+"node-osc@^6.1.14":
+  "integrity" "sha512-TGJ0ll6B//Ys5AnNbltmlM3rvtQ5DSIU/pQlOiJnqnx7FBWCwp9gXzVEODcccuks6HJ/+pjTRNbHKFXfgC9sVQ=="
+  "resolved" "https://registry.npmjs.org/node-osc/-/node-osc-6.1.14.tgz"
+  "version" "6.1.14"
+  dependencies:
+    "osc-min" "^1.1.1"
+
 "nodemon@^2.0.7":
   "integrity" "sha512-XHzK69Awgnec9UzHr1kc8EomQh4sjTQ8oRf8TsGrSmHDx9/UmiGG9E/mM3BuTfNeFwdNBvrqQq/RHL0xIeyFOA=="
   "resolved" "https://registry.npmjs.org/nodemon/-/nodemon-2.0.7.tgz"
@@ -815,6 +827,13 @@
   "version" "1.4.0"
   dependencies:
     "wrappy" "1"
+
+"osc-min@^1.1.1":
+  "integrity" "sha512-8DbiO8ME85R75stgNVCZtHxB9MNBBNcyy+isNBXrsFeinXGjwNAauvKVmGlfRas5VJWC/mhzIx7spR2gFvWxvg=="
+  "resolved" "https://registry.npmjs.org/osc-min/-/osc-min-1.1.2.tgz"
+  "version" "1.1.2"
+  dependencies:
+    "binpack" "~0"
 
 "osc@^2.4.1":
   "integrity" "sha512-3ZJjyqCoHh3J7K5jvXa+RKHHx6qML9hwqWhVk/YON9344QyjpRYdi+ljP8KMsFNTnVfoP82QNIiOkpL9J7mbzA=="

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "node-osc": "^6.1.14",
     "nodemon": "^2.0.7",
     "osc": "^2.4.1",
     "ws": "^7.4.4"
